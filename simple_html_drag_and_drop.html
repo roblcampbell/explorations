@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#first_div {
+    width: 300px;
+    height: 180px;
+    padding: 0px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#second_div {
+    width: 300px;
+    height: 180px;
+    padding: 0px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#status {
+    width: 400px;
+    height: 40px;
+    padding: 0px;
+    border: 3px solid #00aaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var id = ev.dataTransfer.getData("text");
+    var draggedObject = document.getElementById(id);
+    ev.target.appendChild(draggedObject);
+    
+    document.getElementById("status").innerHTML = "Dragged image '" + id + "' onto '" + ev.target.id + "' at " + " parent offset " + ev.offsetX + "," + ev.offsetY + " page offset " + ev.pageX + "," + ev.pageY;
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="status"></div>
+<br>
+<div id="first_div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="second_div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br clear="both">
+
+<div id="image_container">
+<img id="down_arrows" src="http://icons.iconarchive.com/icons/saki/nuoveXT/128/Small-arrow-down-fast-icon.png" draggable="true" ondragstart="drag(event)">
+
+<img id="white_X_on_black_circle" src="http://wfarm1.dataknet.com/static/resources/icons/set28/7f8535d7.png" draggable="true" ondragstart="drag(event)">
+
+<img id="red_dot" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Japan_small_icon.png" draggable="true" ondragstart="drag(event)">
+</div>
+
+</body>
+</html>

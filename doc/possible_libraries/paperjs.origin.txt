@@ -1,0 +1,4 @@
+Homepage:  http://paperjs.org/
+Github:  https://github.com/paperjs/paperjs.github.iO
+NPM pkg:  https://www.npmjs.com/package/paper
+

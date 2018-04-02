@@ -1,0 +1,66 @@
+# Created by .ignore support plugin (hsz.mobi)
+# # Vimish ...
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+#
+# # Vagrant
+.vagrant
+*.box
+modules/
+
+# build artifacts...
+target/
+
+*.class
+!iatapp/wiris/**
+
+# cobertura files...
+*.ser
+
+# logs...
+logs/
+*.log
+
+# eclipse project files and build artifacts...
+.classpath
+.project
+.settings
+.springBeans
+src/.link_to_grails_plugins/
+src/target-eclipse/
+inlineplugins/externalserivces/.link_to_grails_plugins/
+inlineplugins/externalserivces/target-eclipse/
+src/.groovy/suggestions.xdsl
+
+
+# intellij project files and build artifacts...
+.idea
+*.iml
+*.ipr
+*.iws
+out/
+
+# osx turds...
+.DS_Store
+
+#
+modules
+
+# misc...
+.vagrant
+*.box
+
+# grails
+classes
+build
+buildPlugins
+.gradle
+src/.gradle
+/modules
+.slcache/
+replay_pid*.log
+

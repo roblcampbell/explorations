@@ -1,0 +1,1 @@
+https://github.com/nimblemacro/Angular2-FabricJS.git

@@ -1,0 +1,3 @@
+Homepage:  https://inspirit.github.io/jsfeat/
+Git URL:  https://github.com/inspirit/jsfeat.git
+

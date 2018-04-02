@@ -1,0 +1,9 @@
+[submodule "3rd_party_example/angular-editor-fabric-js"]
+	path = 3rd_party_example/angular-editor-fabric-js
+	url = https://github.com/kevoj/angular-editor-fabric-js.git
+[submodule "3rd_party_example/svgedit"]
+	path = 3rd_party_example/svgedit
+	url = https://github.com/SVG-Edit/svgedit.git
+[submodule "3rd_party_example/d3-boundingbox"]
+	path = 3rd_party_example/d3-boundingbox
+	url = https://github.com/lucasb-eyer/d3-boundingbox.git

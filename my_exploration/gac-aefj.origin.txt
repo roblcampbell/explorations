@@ -1,0 +1,1 @@
+https://github.com/kevoj/angular-editor-fabric-js.git

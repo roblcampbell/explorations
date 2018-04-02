@@ -1,0 +1,3 @@
+Project structure:  https://github.com/kevoj/angular-editor-fabric-js.git
+SVG-Edit UI code:  https://github.com/SVG-Edit/svgedit.git
+

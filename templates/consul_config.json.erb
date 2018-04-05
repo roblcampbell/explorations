@@ -1,0 +1,31 @@
+{
+  "service": {
+    "name": "<%= @consul_tags['service_name'] %>",
+    "id": "<%= @consul_tags['client_prefix'] %>-<%= @consul_tags['service_name'] %>",
+    "tags": [
+      <% if @consul_tags.has_key?('api_versions') %>
+      <% @consul_tags['api_versions'].each do | api_version | %>
+      "<%= @consul_tags['client_prefix'] %>-<%= @deployment %>-<%= api_version %>",
+      "<%= api_version %>",
+      <% end %>
+      <% else %>
+      "<%= @consul_tags['client_prefix'] %>-<%= @deployment %>-<%= @consul_tags['api_version'] %>",
+      "<%= @consul_tags['api_version'] %>",
+      <% end %>
+      "<%= @consul_tags['client_prefix'] %>",
+      "<%= @deployment %>"
+      <% if @consul_tags['public'] == true %>,
+      "public"
+      <% end %>
+    ],
+    "port": 80,
+    "checks": [
+      {
+        "id": "all-my-app-name-ui-nginx-status",
+        "name": "HTTP check for My App Name on port 80",
+        "http": "http://localhost:80",
+        "interval": "30s"
+      }
+    ]
+  }
+}

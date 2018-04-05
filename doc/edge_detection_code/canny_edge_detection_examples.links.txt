@@ -1,0 +1,7 @@
+Projects that use the Canny Edge Detection or a derivative (https://en.wikipedia.org/wiki/Canny_edge_detector):
+
+https://github.com/cmisenas/canny-edge-detection.git
+https://github.com/yuta1984/CannyJS.git
+https://github.com/CreateJS/CreateJS.git
+https://github.com/piratefsh/image-processing.git
+

@@ -1,0 +1,4 @@
+git submodule status *
+ 5091e6edc7314af94228a964abdc0606d30b4d15 angular-editor-fabric-js (2.0.0-1-g5091e6e)
+ c219ba5e0fbacfa2c5f7e2bb70e117668119fb93 d3-boundingbox (heads/master)
+ 396cce40ebfde03f7245c682041f63f07f69e3d3 svgedit (svg-edit-2.8.1-131-g396cce40)

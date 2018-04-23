@@ -1,0 +1,8 @@
+
+npm install -g --save-dev @angular/cli @angular/compiler @angular/compiler-cli ts-node tslint typescript \
+	ng-packagr tsickle tslib @angular-devkit/core @angular-devkit/schematics @ngrx/schematics @nrwl/schematics \
+	jasmine-core jasmine-spec-reporter karma karma-cli karma-chrome-launcher karma-coverage-istanbul-reporter \
+	karma-jasmine karma-jasmine-html-reporter karma-typescript protractor webdriver webdriver-manager \
+	yarn mkdirp copyfiles rimraf yo npm-remote-ls npm-install-all npm-install-missing codelyzer json-diff \
+	bower grunt gulp nodemon sass $@
+

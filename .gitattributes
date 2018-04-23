@@ -1,0 +1,13 @@
+######################################################################
+#
+# Details per file setting:
+#   text    These files should be normalized (i.e. convert CRLF to LF).
+#   binary  These files are binary and should be left untouched.
+#
+# Note that binary is a macro for -text -diff.
+######################################################################
+
+# This will cause git to leave any script end-of-line characters untouched.
+#
+* binary
+
